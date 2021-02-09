@@ -1,7 +1,7 @@
 using FreudenthalTriangulation
 using Test
 
-@testset "FreudenthalTriangulations.jl" begin
+@testset "FreudenthalTriangulation.jl" begin
     # test freudenthal_vertices
     n, m = rand(1:10, 2)
     V = freudenthal_vertices(n, m)
