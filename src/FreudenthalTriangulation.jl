@@ -14,7 +14,7 @@ export freudenthal_vertices, freudenthal_simplex, barycentric_coordinates, freud
 Construct the list of Freudenthal vertices in an `n` dimensional space with grid resolution `m`.
 The vertices are represented by a list of `n` dimensional vectors.
 """
-function freudenthal_vertices(n::Int32, m::Int32)
+function freudenthal_vertices(n::Int64, m::Int64)
     V = Vector{Int}[]
     v = Vector{Int}(undef, n)
     v[1] = m
@@ -22,7 +22,7 @@ function freudenthal_vertices(n::Int32, m::Int32)
     return V
 end
 
-function freudenthal_vertices!(V::Vector{Vector{Int32}}, v::Vector{Int32}, i::Int32)
+function freudenthal_vertices!(V::Vector{Vector{Int64}}, v::Vector{Int64}, i::Int64)
     n = length(v)
     if i > n
         push!(V, copy(v))
