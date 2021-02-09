@@ -13,7 +13,7 @@ makedocs(
         "Table of Contents" => [
             "index.md",
             "install.md",
-            "get_started.md",
+            "usage.md",
             "concepts.md"
            ]
     ]
